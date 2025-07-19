@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下訂單 | 阿嬤的豆瓣醬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>下訂單</h1>
+    <nav>
+      <a href="index.html">回首頁</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/mkgzogqg" method="POST">
+      <label>姓名：
+        <input type="text" name="name" required>
+      </label>
+      <label>Email：
+        <input type="email" name="email" required>
+      </label>
+      <label>訂購數量（瓶）：
+        <input type="number" name="quantity" min="1" required>
+      </label>
+      <label>備註：
+        <textarea name="message" rows="4" placeholder="例如：不加辣／送禮用"></textarea>
+      </label>
+      <button type="submit">送出訂單</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 阿嬤的豆瓣醬</p>
+  </footer>
+</body>
+</html>
